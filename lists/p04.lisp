@@ -3,5 +3,5 @@
 
 (defun len (lst)
   (if lst
-    (1+ (len (cdr lst)))
+    (1+ (len (rest lst)))
     0))

@@ -4,5 +4,5 @@
 (defun flatten (lst)
   (cond
     ((not (listp lst)) (list lst))
-    (lst (append (flatten (car lst))
-                 (flatten (cdr lst))))))
+    (lst (append (flatten (first lst))
+                 (flatten (rest lst))))))

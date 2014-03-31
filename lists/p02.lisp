@@ -2,4 +2,4 @@
 ;;;; Find the second to last element of a list
 
 (defun penultimate (lst)
-  (cadr (reverse lst)))
+  (second (reverse lst)))

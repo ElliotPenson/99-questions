@@ -3,5 +3,5 @@
 
 (defun kth (lst k)
   (if (= k 0)
-    (car lst)
-    (kth (cdr lst) (1- k))))
+    (first lst)
+    (kth (rest lst) (1- k))))
