@@ -1,6 +1,8 @@
 ;;;; p09.lisp
 ;;;; Pack consecutive duplicates of list elements into sublists
 
+(in-package :99-questions)
+
 (defun group (lst)
   (when lst
     (if (equal (first lst)

@@ -1,6 +1,8 @@
 ;;;; p11.lisp
 ;;;; Modified run-length encoding
 
+(in-package :99-questions)
+
 (defun encode-modified (lst)
   (mapcar (lambda (group)
             (if (rest group)
