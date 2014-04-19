@@ -4,6 +4,6 @@
 (in-package :99-questions)
 
 (defun kth (lst k)
-  (if (= k 0)
+  (if (zerop k)
     (first lst)
     (kth (rest lst) (1- k))))

@@ -6,5 +6,5 @@
 (defun drop (lst n)
   (loop for item in lst
         for i from 1
-        unless (= (mod i n) 0)
+        unless (zerop (mod i n))
         collect item))
