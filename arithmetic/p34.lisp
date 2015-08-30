@@ -3,8 +3,8 @@
 
 (in-package :99-questions)
 
-;;; Evaluates to the amount of relatively price numbers less than or equql to
-;;; the given integer
 (defun totient-phi (number)
+  "Evaluates to the amount of relatively prime numbers less than or equal to the
+   given integer"
   (loop for candidate from 1 to number
      count (coprimep number candidate)))
